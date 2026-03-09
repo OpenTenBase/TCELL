@@ -1,0 +1,19 @@
+# --- Linux Kernel Module Build Artifacts ---
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+*.d
+# Kernel module specific build files
+*.mod.c
+*.mod
+*.a
+modules.order
+Module.symvers
+*.cmd
+.*.cmd
+
+# --- Project Specific ---
+# Exclude logs (referenced in your header defines)
+*.log
