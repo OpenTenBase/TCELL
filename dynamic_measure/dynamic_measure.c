@@ -211,7 +211,7 @@ static int perform_periodic_scan(int *total_processes_measured_in_cycle,
         task_ref = p;
         if (!task_ref) continue;
 
-        if (strstr(task_ref->comm, "postgres") == NULL) {
+        if (strstr(task_ref->comm, "postgres") == NULL && strstr(task_ref->comm, "mysqld") == NULL) {
             put_task_struct(task_ref);
             continue;
         }
